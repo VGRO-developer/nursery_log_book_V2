@@ -1,0 +1,482 @@
+body {
+    --header-colo: #005b41;
+    --slider_color: rgb(2, 5, 3);
+    --font-color: #333;
+    --bg-color: #fcfcfc;
+    --white-color: #fff;
+    --font-noto: 'Noto Sans', sans-serif;
+    --border-color: #c5c5c5;
+    --red-color: #ff5252;
+}
+
+
+/* FOR MAIN CONTAINER */
+.vgro_main_container {
+    display: flex;
+
+}
+
+
+/* FOR LEFT SIDE GREEN CONTAINER */
+.vgro_left_container {
+    width: 300px;
+    background-color: var(--slider_color);
+    height: 100vh;
+
+}
+
+/* FOR LEFT SIDE GREEN CONTAINER LOGO */
+
+.vgro_left_container .vgro_left_container_header_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.vgro_left_container .vgro_left_container_header_section img {
+    padding-top: 12px;
+
+    width: 100px;
+    display: flex;
+
+}
+
+/* FOR LEFT SIDE CONTAINER BUTTON */
+
+.vgro_left_container_dashboard_buttons {
+    padding-top: 15px;
+    margin-top: 150px;
+    /* height: 100vh;
+    border: 1px solid #fff; */
+}
+
+.vgro_left_container_dashboard_buttons span {
+    font-family: var(--font-noto);
+    color: var(--white-color);
+    font-size: 18px;
+    margin-bottom: 15px;
+
+}
+
+.vgro_left_container_dashboard_buttons .dashboard_buttons_section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 16px;
+}
+
+.vgro_left_container_dashboard_buttons .dashboard_buttons_section i {
+    padding-right: 12px;
+    color: var(--white-color);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.Active {
+    width: 100%;
+    background-color: var(--header-colo);
+    padding: 6px;
+    border-right: 6px solid var(--red-color);
+}
+
+.icon {
+    padding-left: 12px;
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--font-noto);
+}
+
+.new_user_section {
+    width: 100%;
+    padding: 6px;
+    transition: 0.2s;
+
+}
+
+.new_user_section:hover {
+    transition: 0.2s;
+    background-color: var(--header-colo);
+    padding: 6px;
+    border-right: 6px solid var(--red-color);
+}
+
+
+.clint_section{
+    width: 100%;
+    padding:6px;
+    transition: 0.2s;
+}
+
+.clint_section:hover{
+    transition: 0.2s;
+    background-color: var(--header-colo);
+    border-right: 6px solid var(--red-color);
+    padding: 6px;
+}
+
+.parcel_section{
+    width: 100%;
+    padding: 6px;
+    transition: 0.2s;
+}
+
+.parcel_section:hover{
+    transition: 0.2s;
+    background-color: var(--header-colo);
+    border-right: 6px solid var(--red-color);
+}
+
+.dispatch_section{
+    width:100%;
+    padding: 6px;
+    transition: 0.2s;
+
+}
+
+.dispatch_section:hover{
+    transition: 0.2s;
+    background-color: var(--header-colo);
+    border-right: 6px solid var(--red-color);
+}
+
+/* ++++++++++++++++++++++++++++----------------------+++++++++++++++++++++++++++ */
+
+/* FOR RIGHT SIDE CONTAINER */
+
+.vgro_right_container {
+    width: 100%;
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+/* FOR RIGHT SIDE HEADER SECTION */
+.vgro_right_container_header_section {
+    width: 100%;
+    background-color: var(--header-colo);
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    padding-right: 15px;
+}
+
+/* FOR USER IMAGE SECTION */
+.vgro_user_image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* FOR USER IMAGE */
+.vgro_user_image img {
+    width: 35px;
+}
+
+/* FOR USER DROPDOWN BUTTON SECTION */
+.dropdown .user_profile_button {
+    text-decoration: none !important;
+    color: var(--white-color);
+    font-size: 14px;
+    font-family: var(--font-noto);
+}
+
+.dropdown-menu li a,
+span {
+    color: var(--font-color);
+}
+
+.dropdown .dropdown-menu .logout {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.dropdown .dropdown-menu .user_icon {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+
+}
+
+
+/* FOR CONTENT CONTAINER */
+.vgro_content_container {
+    width: 95%;
+    margin: auto !important;
+    /* border: 1px solid #333;  */
+}
+
+/* FOR USER CREATE BUTTON SECTION */
+.vgro_create_button_section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+/* FOR CREATE BUTTON */
+.create_button {
+    background-color: var(--header-colo);
+    color: var(--bg-color);
+    border: none !important;
+    border-radius: 2px;
+    padding: 10px 35px;
+    outline: none !important;
+}
+
+/* FOR TABLE CONTAINER */
+.vgro_content_user_table_section {
+    display: flex;
+    justify-content: center !important;
+
+}
+
+/* FOR TABLE CONTAINER */
+.vgro_table_container {
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: rgb(187, 187, 187) 0px 1px 15px 0px;
+}
+
+/* FOR USER MODAL FORM */
+
+.vgro_create_user_form_section {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 35px;
+    flex-direction: column;
+}
+
+/* FOR USER LABEL SECTION  */
+.vgro_create_user_form_section label {
+    font-family: var(--font-noto);
+    color: var(--font-color);
+}
+
+/* FOR USER INPUT SECTION */
+.vgro_create_user_form_section input,
+textarea {
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    border-radius: 2px;
+    outline: none !important;
+}
+
+/* FOR FORM NAME SECTION */
+.vgro_name_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* FOR EMAIL SECTION */
+.vgro_email_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* FOR USER PHONE NUMBER */
+.vgro_phone_number_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* FOR ADDRESS SECTION */
+.vgro_address_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* FOR TABLE SECTION */
+.vgro_table_section {
+    padding: 10px;
+}
+
+/* FOR TABLE IMAGE SHOW CASE */
+.user_image_show_case {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    overflow: hidden !important;
+
+}
+
+/* FOR ACTION BUTTON AECTION */
+.table_action_button_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOR NO-BG BUTTON CLASS */
+.Bg_dis {
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+
+}
+
+/* FOR SHOW CASE IMAGE SECTION */
+.user_image_show_case img {
+    width: 50px;
+}
+
+/* FOR TABLE CONTENT */
+.table_content_text {
+    vertical-align: middle;
+}
+
+/* FOR VIEW BUTTON SPAN SECTION */
+.table_view_button span {
+    color: var(--font-color);
+}
+
+/* FOR EDIT BUTTON SPAN SECTION*/
+.table_edit_button span {
+    color: var(--slider_color);
+
+}
+
+/* FOR DELETE BUTTON SPAN SECTION */
+.table_delete_button span {
+    color: var(--red-color);
+}
+
+/* FOR MODAL BACKDROP(BOOTSTRAP) */
+.modal-backdrop {
+    position: static !important;
+}
+
+/* FOR VIEW LIST SECTION */
+.vgro_view_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* FOR USER NAME LIST SECTION */
+.User_Name_List {
+    display: flex !important;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/* FOR USER NAME LIST INPUT SECTION */
+.User_Name_List input {
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    font-weight: bold !important;
+    font-family: var(--font-noto);
+}
+
+/* FOR USER NAME LIST INPUT PLACEHOLDER */
+
+.User_Name_List input::placeholder {
+    color: var(--font-color);
+}
+
+/* FOR USER EMAIL LIST SECTION */
+.User_Email_List {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOR USER EMAIL LIST INPUT SECTION */
+.User_Email_List input {
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    font-weight: bold !important;
+    font-family: var(--font-noto);
+}
+
+/* USER EMAIL LIST INPUT PALCEHOLDER SECTION */
+.User_Email_List input::placeholder {
+    color: var(--font-color);
+}
+
+/* FOR USER PASSWORD LIST SECTION */
+.User_Password_List {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOR USER PASSWORD LIST INPUT SECTION */
+.User_Password_List input {
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    font-weight: bold !important;
+    font-family: var(--font-noto);
+}
+
+/* FOR USER PASSWORD LIST INPUT PLACEHOLDER SECTION */
+.User_Password_List input::placeholder {
+    color: var(--font-color);
+}
+
+/* FOR USER PHONE LIST SECTION */
+.User_Phone_List {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* USER PHONE LIST INPUT SECTION */
+.User_Phone_List input {
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    font-weight: bold !important;
+    font-family: var(--font-noto);
+    place-content: var(--font-color);
+}
+
+/* FOR USER PHONE LIST PLACEHOLDER SECTION */
+.User_Phone_List input::placeholder {
+    color: var(--font-color);
+}
+
+/* FOR USER ADDRESS LIST SECTION */
+.User_Address_List {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* USER ADDRESS LIST P TAG SECTION */
+.User_Address_List p {
+    font-family: var(--font-noto);
+    font-weight: bold;
+    text-align: start !important;
+    color: var(--font-color);
+    width: 235px;
+}
+
+.update_section input::placeholder {
+    color: var(--font-color);
+
+}
+/* _________________________*****************************____________________________ */
+    /* CREATE PAGE SECTION END HERE */

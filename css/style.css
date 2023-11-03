@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Section starts Here */
+
+body {
+    --roboto-font: "Roboto", sans-serif;
+    --header-color: #005b41;
+    --light-green: #024834;
+    --light-hover: #31866e;
+    --white-color: #fff;
+    --hardGray-hover: #808080;
+    --hardGray-color: #333;
+    --border-color: #33333336;
+    --red-color: red;
+    --red-hover: rgb(255, 100, 100);
+}
+
+/* Root Section End Here */
+
+/* Admin Page Section Start Here */
+
+/* Button Set Section Start Here */
+.btn-green {
+    width: 150px;
+    height: 30px;
+    border: none !important;
+    border-radius: 2px;
+    background-color: var(--header-color);
+    color: var(--white-color);
+}
+
+.btn-green:active {
+    width: 150px;
+    height: 30px;
+    border: none !important;
+    border-radius: 2px;
+    background-color: var(--light-green);
+    color: var(--white-color);
+}
+
+/* Button Section End Here  */
+
+/* Input & LableSection Start Here */
+input {
+    outline: none !important;
+    border: 0.5px solid var(--header-color);
+    background-color: transparent !important;
+    border-radius: 2px;
+    color: var(--header-color);
+    font-family: var(--roboto-font);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+label {
+    padding-bottom: 6px;
+    font-family: var(--roboto-font);
+    font-weight: bold;
+}
+
+/* Input & Lable Section End Here */
+
+/* Header Section Start Here */
+
+.vgro_header_section {
+    width: 100%;
+    height: 50px;
+    background-color: var(--header-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.vgro_header_section img {
+    margin-left: 10px;
+    width: 100px;
+}
+
+.vgro_user{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.vgro_user .user_icon img{
+    width:40px;
+}
+   
+.btn-transparent{
+    color: var(--white-color) !important;
+    outline: none;
+}
+
+.btn-transparent:focus{
+box-shadow: none !important;  
+
+}
+
+
+/* Header Section End Here */
+
+/* Landing Section Start Here */
+.vgro_landing_section {
+    background-image: url("https://cdn.pixabay.com/photo/2023/03/26/11/40/terraces-7878191_1280.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.vgro_form_container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.vgro_form_section {
+    width: 450px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--hardGray-color);
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    border: 1px solid var(--border-color);
+}
+
+.vgro_name_section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    width: 350px;
+}
+
+.vgro_password_section {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.vgro_button_section {
+    padding-top: 15px;
+}
+
+.vgro_form_section form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Landing Section End Here */
+
+/* Admin Page Section End Here */
+
+
+/* Create Page Section Stat Here */
+
+
+.vgro_Create_Button {
+    margin: auto;
+    width: 80%;
+    Padding-top: 150px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.vgro_Create_Button button {
+    border: none;
+    background-color: var(--header-color);
+    color: var(--white-color);
+    padding: 7px 45px;
+    border-radius: 2px;
+    font-weight: bold;
+    transition: 0.2s;
+    outline: none;
+
+}
+.vgro_Create_Button button {
+    border: none;
+    background-color: var(--header-color);
+    color: var(--white-color);
+    padding: 7px 45px;
+    border-radius: 2px;
+    font-weight: bold;
+    transition: 0.2s;
+    outline: none;
+
+}
+
+.vgro_Create_Button button:hover {
+    background-color: var(--light-green);
+    transition: 0.2s;
+
+}
+
+.vgro_Create_Button button:active {
+
+    background-color: var(--light-green);
+
+}
+
+.create_card_section{
+    display: flex;
+    gap: 15px;
+}
+.vgro_table_section {
+    margin: auto;
+    width: 80%;
+}
+
+.action_button {
+    display: flex;
+    gap: 20px;
+}
+
+.edit_button {
+    text-decoration: none;
+    color: var(--hardGray-color);
+    transition: 0.3s;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+}
+
+.edit_button:hover {
+
+    color: var(--hardGray-hover);
+}
+
+.eye_button {
+    text-decoration: underline;
+    color: var(--header-color);
+    transition: 0.3s;
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+
+}
+
+.eye_button:hover {
+    transition: 0.3s;
+    color: var(--light-hover);
+
+}
+
+.delete_button {
+    text-decoration: none;
+    color: var(--red-color);
+    transition: 0.3s;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.delete_button:hover {
+    transition: 0.3s;
+    color: var(--red-hover);
+}
+
+.delete_card .Buttons{
+    display: flex;
+    justify-content:center;
+    gap:35px;
+    
+}
+
+.update_card_section{
+    display: flex;
+    gap: 15px;
+    padding:15px;
+}
+/* Create Page Section End Here */
+
+
+/* DISPATCH LOG PAGE SECTION STARTS HERE */
+
+
+
+/* DISPATCH LOG PAGE SECTION END HERE */

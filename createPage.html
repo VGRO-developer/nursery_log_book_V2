@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Vgro webApp</title>
+</head>
+
+<body>
+    <div class="vgro_main_container">
+
+        <!-- Header Section Starts Here -->
+        <div class="vgro_header_section">
+            <div class="vgro_logo">
+                <img src="img/logo_white.png" alt="vgro_Logo">
+            </div>
+
+            <div class="vgro_user">
+                <div class="user_icon">
+                    <img src="img/Ellipse 1.png" alt="user_image">
+
+                </div>
+                <div class="dropdown ">
+                    <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        User Name
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- Header Section End Here -->
+
+        <!-- Create Button Section Start Here -->
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create New User</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <form>
+
+                            <div class="mb-3">
+                                <label for="Inputname" class="form-label">User Name</label>
+                                <input type="name" class="form-control" id="Inputname">
+                                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Mail Id</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mobilenumber" class="form-label">Mobile Number</label>
+                                <input type="number" class="form-control" id="mobilenumber">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mobilenumber" class="form-label">Photo</label>
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <!-- <input type="number" class="form-control" id="mobilenumber"> -->
+                                <textarea name="address" id="address" cols="61" rows="5"></textarea>
+                            </div>
+<div class="create_card_section">
+    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+</div>
+
+                          
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="vgro_Create_Button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create User
+            </button>
+        </div>
+
+
+        <!-- Create Button Section End Here -->
+
+        <!-- Table Section Starts here -->
+        <div class="vgro_table_section">
+
+            <div class="vgro_table_container">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>User Name 1</td>
+                            <td>Mail Id 1</td>
+                            <td>*******</td>
+                            <td class="action_button">
+                    
+                                    <button class="edit_button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                    </button>
+
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Update User Data</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                            
+                            
+                                                    <form>
+                            
+                                                        <div class="mb-3">
+                                                            <label for="Inputname" class="form-label">User Name</label>
+                                                            <input value="User Name" type="name" class="form-control" id="Inputname">
+                                                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                                                        </div>
+                            
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputEmail1" class="form-label">Mail Id</label>
+                                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                                aria-describedby="emailHelp" value=Email@gmail.com>
+                                                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                                                        </div>
+                            
+                                                        <div class="mb-3">
+                                                            <label for="mobilenumber" class="form-label">Mobile Number</label>
+                                                            <input type="number" class="form-control" id="mobilenumber" value="9876543210">
+                                                        </div>
+                            
+                                                        <div class="mb-3">
+                                                            <label for="mobilenumber" class="form-label">Photo</label>
+                                                            <div class="input-group mb-3">
+                                                                <input type="file" class="form-control" id="inputGroupFile02">
+                                                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                                            </div>
+                            
+                                                        </div>
+                            
+                                                            <label for="address" class="form-label">Address</label>
+                                                            <!-- <input type="number" class="form-control" id="mobilenumber"> -->
+                                                            <textarea name="address" id="address" cols="61" rows="5"></textarea>
+                                                        </div>
+                            
+                                                        <div class="update_card_section">
+                                                            <button type="submit" class="btn btn-success">Update</button>
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                                                        </div>
+                                                      
+                                                    </form>
+                                                </div>
+                            
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                            
+                                <!-- Button trigger modal -->
+                                <button type="button" class="eye_button " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="material-symbols-outlined">
+                                        visibility
+                                    </span>
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div  class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Details Of User</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table class="table">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Mobile Number</th>
+                                                        <th scope="col">address</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                      <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>User Name</td>
+                                                        <td>MAil@gmail.com</td>
+                                                        <td>9876543210</td>
+                                                        <td><textarea name="address" id="address" cols="10" rows="2"></textarea></td>
+                                                      </tr>
+                        
+                                                    </tbody>
+                                                  </table>
+                                                  <button type="button" class="btn btn-success"
+                                                  data-bs-dismiss="modal">Done</button>
+                                             
+                                            </div>
+                                       
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a href="#" class="eye_button"><span class="material-symbols-outlined">
+                                        visibility
+                                    </span></a> -->
+
+                                <button type="button" class="delete_button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </button>
+
+                            </td>
+                        </tr>
+                        <!-- Button trigger modal -->
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel1">Do You Want To Delete?</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body delete_card">
+                                        <div class="Buttons">
+                                            <button type="button" class="btn btn-danger"
+                                                data-bs-dismiss="modal">Yes</button>
+                                            <button type="button" class="btn btn-success"
+                                                data-bs-dismiss="modal">No</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>User Name 2</td>
+                            <td>Mail Id 2</td>
+                            <td>*******</td>
+                            <td class="action_button">
+                                <button class="edit_button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <span class="material-symbols-outlined">
+                                        edit
+                                    </span>
+                                </button>
+                                    <button type="button" class="eye_button " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="material-symbols-outlined">
+                                        visibility
+                                    </span>
+                                </button>
+                                <button type="button" class="delete_button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>User Name 3</td>
+                            <td>Mail Id 3</td>
+                            <td>*******</td>
+                            <td class="action_button">
+                                <button class="edit_button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <span class="material-symbols-outlined">
+                                        edit
+                                    </span>
+                                </button>
+                                    <button type="button" class="eye_button " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="material-symbols-outlined">
+                                        visibility
+                                    </span>
+                                </button>
+                                <button type="button" class="delete_button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>User Name 4</td>
+                            <td>Mail Id 4</td>
+                            <td>*******</td>
+                            <td class="action_button">
+                                <button class="edit_button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <span class="material-symbols-outlined">
+                                        edit
+                                    </span>
+                                </button>
+                                    <button type="button" class="eye_button " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="material-symbols-outlined">
+                                        visibility
+                                    </span>
+                                </button>
+                                <button type="button" class="delete_button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>User Name 5</td>
+                            <td>Mail Id 5</td>
+                            <td>*******</td>
+                            <td class="action_button">
+                                <button class="edit_button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <span class="material-symbols-outlined">
+                                        edit
+                                    </span>
+                                </button>
+                                <button type="button" class="eye_button " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="material-symbols-outlined">
+                                        visibility
+                                    </span>
+                                </button>
+                                <button type="button" class="delete_button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+        <!-- Table Section End Here -->
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>

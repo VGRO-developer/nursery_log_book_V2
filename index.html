@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/css/all.css">
+    <title>Vgro WepApp</title>
+</head>
+
+<body>
+
+    <!-- MAIN_CONTAINER_START_HERE -->
+    <div class="vgro_main_container">
+        <!-- LEFT SIDE CONTAINER START HERE -->
+        <div class="vgro_left_container">
+            <div class="vgro_left_container_header_section">
+                <img src="img/logo_white.png" alt="Logo_image">
+            </div>
+
+          <div class="vgro_left_container_dashboard_buttons">
+                <span>Dashboard</span>
+            
+            <div class="dashboard_buttons_section">
+              <div class="new_user_section Active  d-flex">
+                <div class="icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <div class="link">
+                    <a href="#">Create New User</a>
+                </div>
+                 
+              </div>
+              <div class="clint_section d-flex">
+
+                <div class="icon">
+                    <i class="fa-solid fa-handshake-angle"></i> 
+                </div>
+
+                <div class="link">
+                    <a href="#">Create New Clint</a>
+                </div>
+         
+              </div>
+
+              <div class="parcel_section d-flex">
+
+                <div class="icon">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+
+                <div class="link">
+                    <a href="#">Create New ParcelService</a>
+                </div>
+             
+              </div>
+                  
+              <div class="dispatch_section d-flex">
+                <div class="icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div class="link">
+                    <a href="#">Dispatch Logs</a>
+                </div>
+              </div>
+                   
+                   
+             </div>
+            </div>
+
+        </div>
+        <!-- LEFT SIDE CONTAINER END HERE -->
+
+       
+
+        <!-- ______________________________++++++++++++++++++++++++++++____________________________ -->
+
+
+        <!-- RIGHT SIDE CONTAINER START HERE -->
+        <div class="vgro_right_container">
+
+            <!-- RIGHT SIDE HEADER SECTION START HERE -->
+            <div class="vgro_right_container_header_section">
+                <!-- USER IMAGE SECTION START HERE -->
+                <div class="vgro_user_image">
+                    <img src="img/Ellipse 1.png" alt="User_image">
+                </div>
+                <!-- USER IMAGE SECTION END HERE -->
+
+                <!-- USER PROFILE BUTTON DROPDOWN SECTION START HERE -->
+                <div class="dropdown">
+                    <a class="user_profile_button dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        User Name
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li class="user_icon"><span class="material-symbols-outlined">
+                            badge
+                            </span><a class="dropdown-item" href="#">My Profile</a></li>
+                            <li class="logout"><span class="material-symbols-outlined">
+                                logout
+                            </span><a class="dropdown-item" href="admin.html">Logout</a></li>
+                    </ul>
+                </div>
+                <!-- USER PROFILR BUTTON DROPDOWN SECTION END HERE -->
+            </div>
+            <!-- RIGHT SIDE HEADER SECTION END HERE -->
+
+            <!-- RIGHT SIDE CONTENT SECTION STARTS HERE -->
+
+            <div class="vgro_content_container">
+
+                <!-- RIGHT SIDE CREATE BUTTON SECTION START HERE -->
+                <div class="vgro_create_button_section">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="create_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create New User
+                    </button>
+                    <!-- RIGHT SIDE CREATE MODAL SECTION START HERE -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Create New User </h5>
+                                   
+                                </div>
+                                <div class="modal-body">
+                                    <div class="vgro_create_user_form_section">
+
+                                        <div class="vgro_name_section">
+                                            <label for="name">Name</label>
+                                            <input type="text" name="name" id="name" placeholder="Enter User Name.">
+                                        </div>
+
+                                        <div class="vgro_email_section">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" placeholder="Enter User Email Address"
+                                                id="email">
+                                        </div>
+
+                                        <div class="vgro_user_form_image">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label">Uplaod User Image</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </div>
+
+                                        <div class="vgro_phone_number_section">
+                                            <label for="number">Number</label>
+                                            <input type="number" name="number" id="number"
+                                                placeholder="Enter User Mobile Number ">
+                                        </div>
+
+                                        <div class="vgro_address_section">
+                                            <label for="address">Address</label>
+                                            <textarea name="address" placeholder="Enter User Address" id="address"
+                                                cols="30" rows="8"></textarea>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT SIDE CREATE MODAL SECTION END HERE -->
+                </div>
+                <!-- RIGHT SIDE CREATE BUTTON SECTION END HERE -->
+
+
+                <!-- RIGHT SIDE TABLE SECTION START HERE -->
+                <div class="vgro_content_user_table_section">
+                    <div class="vgro_table_container">
+                        <div class="vgro_table_section">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr class="table_content_text">
+                                        <th scope="col">#</th>
+                                        <th scope="col">User Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Password</th>
+                                        <th scope="col">Phone Number</th>
+                                        <th scope="col">User Image</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table_content_text">
+                                        <th scope="row">1</th>
+                                        <td>USER NAME</td>
+                                        <td>User@Email.com</td>
+                                        <td>************</td>
+                                        <td>9876543210</td>
+                                        <td>
+                                            <div class="user_image_show_case">
+                                                <img src="img/User_image.jpg" alt="User_Image">
+                                            </div>
+                                        </td>
+                                        <td class="user_address_show_case">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Quae magnam numquam nemo optio.</td>
+                                        <td>
+                                            <div class="table_action_button_section">
+
+                                                <!-- USER TABLE BTTON SECTION START HERE -->
+
+                                                <button type="button" class="table_view_button Bg_dis"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                    <span class="material-symbols-outlined">visibility
+                                                    </span>
+                                                </button>
+                                                <!-- Button trigger modal -->
+
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal1" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">User
+                                                                    Details</h5>
+                                                             
+                                                            </div>
+
+                                                            <div class="modal-body">
+                                                                <div class="vgro_view_list">
+
+                                                                    <div class="User_Name_List">
+                                                                        <label for="User_Name_lable">
+                                                                            User Name
+                                                                        </label>
+                                                                        <input type="text" placeholder="USER NAME"
+                                                                            disabled>
+                                                                    </div>
+
+                                                                    <div class="User_Email_List">
+                                                                        <label for="User_Email_lable">
+                                                                            User Email
+                                                                        </label>
+                                                                        <input type="email" placeholder="USER@Email.COM"
+                                                                            disabled>
+                                                                    </div>
+
+                                                                    <div class="User_Password_List">
+                                                                        <label for="User_Password_lable">Password
+                                                                        </label>
+                                                                        <input type="password"
+                                                                            placeholder="**************" disabled>
+                                                                    </div>
+
+                                                                    <div class="User_Phone_List">
+                                                                        <label for="User_Phone_lable">Mobile
+                                                                            Number
+                                                                        </label>
+                                                                        <input type="number" placeholder="9876543210"
+                                                                            disabled>
+                                                                    </div>
+
+                                                                    <div class="User_Address_List">
+                                                                        <label for="User_Address_lable">User
+                                                                            Address
+                                                                        </label>
+                                                                        <P>Lorem ipsum dolor sit amet consectetur
+                                                                            adipisicing elit. Rem vitae illum, excepturi
+                                                                            enim debitis libero maxime est fuga
+                                                                            reprehenderit et quos incidunt quasi.
+                                                                        </P>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-success"
+                                                                    data-bs-dismiss="modal">Close</button>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- USER TABLE BUTTON SECTION END HERE -->
+                                                <button type="button" class="table_edit_button Bg_dis" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal3">
+                                                    <span class="material-symbols-outlined">
+                                                        edit
+                                                    </span>
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal3" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Edit User
+                                                                    Data </h5>
+                                                            
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="vgro_create_user_form_section">
+
+                                                                    <div class="update_section">
+                                                                        <div class="vgro_name_section">
+                                                                            <label for="name">Name</label>
+                                                                            <input type="text" name="name" id="name"
+                                                                                placeholder="User Name">
+                                                                        </div>
+
+                                                                        <div class="vgro_email_section">
+                                                                            <label for="email">Email</label>
+                                                                            <input type="email" name="email"
+                                                                                placeholder="EMAIL@Gmail.com"
+                                                                                id="email">
+                                                                        </div>
+
+                                                                        <div class="vgro_user_form_image">
+                                                                            <div class="mb-3">
+                                                                                <label for="formFile"
+                                                                                    class="form-label">Uplaod User
+                                                                                    Image</label>
+                                                                                <input class="form-control" type="file"
+                                                                                    id="formFile">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="vgro_phone_number_section">
+                                                                            <label for="number">Number</label>
+                                                                            <input type="number" name="number"
+                                                                                id="number" placeholder="9876543210 ">
+                                                                        </div>
+
+                                                                        <div class="vgro_address_section">
+                                                                            <label for="address">Address</label>
+                                                                            <textarea name="address"
+                                                                                placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vitae illum, excepturi enim debitis libero maxime est fuga reprehenderit et quos incidunt quasi."
+                                                                                id="address" cols="30"
+                                                                                rows="8"></textarea>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger"
+                                                                    data-bs-dismiss="modal">Cancel</button>
+                                                                <button type="button"
+                                                                    class="btn btn-success">Update</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- USER FORM DELETE BUTTON SECTION -->
+                                                <!-- <button class="table_delete_button Bg_dis"><span
+                                                        class="material-symbols-outlined">
+                                                        delete
+                                                    </span></button> -->
+
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="table_delete_button Bg_dis" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal5">
+                                                    <span
+                                                    class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal5" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">User Profile Data</h5>
+                                                                
+                                                            </div>
+                                                            <div class="modal-body">
+                                                               Do You Want To Delete?
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-success"
+                                                                    data-bs-dismiss="modal">No</button>
+                                                                <button type="button" class="btn btn-danger">Yes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIGHT SIDE TABLE SECTION END HERE -->
+            </div>
+
+
+            <!-- RIGHT SIDE CONTENT SECTION END HERE -->
+
+
+        </div>
+        <!-- RIGHT SIDE CONTAINER END HERE -->
+    </div>
+
+    <!-- MAIN CONTAINER END HERE -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
