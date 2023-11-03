@@ -480,3 +480,38 @@ textarea {
 }
 /* _________________________*****************************____________________________ */
     /* CREATE PAGE SECTION END HERE */
+
+
+
+/* DISPATCH LOG START HERE */
+.status{
+    padding: 5px;
+}
+
+.status option {
+    color: var(--font-color);
+    font-family: var(--font-noto);
+}
+
+.status{
+    outline-color: var(--border-color);
+    
+}
+.parcel_update{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+.parcel_image_section{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.parcel_image {
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+.parcel_image img{
+    width: 200px;
+}

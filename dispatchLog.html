@@ -1,98 +1,529 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <title>Vgro webApp</title>
+    <link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/css/all.css">
+    <title>Vgro WepApp</title>
 </head>
 
 <body>
 
+    <!-- MAIN_CONTAINER_START_HERE -->
     <div class="vgro_main_container">
-
-        <!-- Header Section Starts Here -->
-        <div class="vgro_header_section">
-            <div class="vgro_logo">
-                <img src="img/logo_white.png" alt="vgro_Logo">
+        <!-- LEFT SIDE CONTAINER START HERE -->
+        <div class="vgro_left_container">
+            <div class="vgro_left_container_header_section">
+                <img src="img/logo_white.png" alt="Logo_image">
             </div>
 
-            <div class="vgro_user">
-                <div class="user_icon">
-                    <img src="img/Ellipse 1.png" alt="user_image">
+            <div class="vgro_left_container_dashboard_buttons">
+                <span>Dashboard</span>
+
+                <div class="dashboard_buttons_section">
+                    <div class="new_user_section d-flex">
+                        <div class="icon">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+                        <div class="link">
+                            <a href="index.html">Create New User</a>
+                        </div>
+
+                    </div>
+                    <div class="clint_section d-flex">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+
+                        <div class="link">
+                            <a href="#">Create New Clint</a>
+                        </div>
+
+                    </div>
+
+                    <div class="parcel_section d-flex">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+
+                        <div class="link">
+                            <a href="#">Create New ParcelService</a>
+                        </div>
+
+                    </div>
+
+                    <div class="dispatch_section Active d-flex">
+                        <div class="icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="link">
+                            <a href="dispatchLog.html">Dispatch Logs</a>
+                        </div>
+                    </div>
+
 
                 </div>
-                <div class="dropdown ">
-                    <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton1"
+            </div>
+
+        </div>
+        <!-- LEFT SIDE CONTAINER END HERE -->
+
+
+
+        <!-- ______________________________++++++++++++++++++++++++++++____________________________ -->
+
+
+        <!-- RIGHT SIDE CONTAINER START HERE -->
+        <div class="vgro_right_container">
+
+            <!-- RIGHT SIDE HEADER SECTION START HERE -->
+            <div class="vgro_right_container_header_section">
+                <!-- USER IMAGE SECTION START HERE -->
+                <div class="vgro_user_image">
+                    <img src="img/Ellipse 1.png" alt="User_image">
+                </div>
+                <!-- USER IMAGE SECTION END HERE -->
+
+                <!-- USER PROFILE BUTTON DROPDOWN SECTION START HERE -->
+                <div class="dropdown">
+                    <a class="user_profile_button dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         User Name
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li class="user_icon"><span class="material-symbols-outlined">
+                                badge
+                            </span><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li class="logout"><span class="material-symbols-outlined">
+                                logout
+                            </span><a class="dropdown-item" href="admin.html">Logout</a></li>
                     </ul>
                 </div>
-
+                <!-- USER PROFILR BUTTON DROPDOWN SECTION END HERE -->
             </div>
-        </div>
+            <!-- RIGHT SIDE HEADER SECTION END HERE -->
+
+            <!-- RIGHT SIDE CONTENT SECTION STARTS HERE -->
+
+            <div class="vgro_content_container">
+
+                <!-- RIGHT SIDE CREATE BUTTON SECTION START HERE -->
+                <div class="vgro_create_button_section">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="create_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create New Despatch
+                    </button>
+                    <!-- RIGHT SIDE CREATE MODAL SECTION START HERE -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Create Despatch </h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="vgro_create_user_form_section">
+                                        <div class="vgro_name_section">
+                                            <label for="name">Customer Name</label>
+                                            <input type="text" name="name" id="name" placeholder="Enter Customer Name."
+                                                required>
+                                        </div>
+
+                                        <div class="vgro_email_section">
+                                            <label for="email">Customer Mobile Number </label>
+                                            <input type="email" name="number" placeholder="Enter Customer Mobile Number"
+                                                id="email" required>
+                                        </div>
+
+                                        <div class="vgro_user_form_image">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label">Uplaod Parcel Image</label>
+                                                <input class="form-control" type="file" id="formFile" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="vgro_phone_number_section">
+                                            <label for="number">Parcel Type</label>
+                                            <input type="text" name="number" id="number"
+                                                placeholder="Enter Parcel Type " required>
+                                        </div>
+
+                                        <div class="vgro_phone_number_section">
+                                            <label for="number">Parcel Responsible Person</label>
+                                            <input type="text" name="number" id="number"
+                                                placeholder="Enter Responsible Person Name" required>
+                                        </div>
+
+                                        <div class="vgro_phone_number_section">
+                                            <label for="number">Parcel Destination</label>
+                                            <input type="text" name="number" id="number"
+                                                placeholder="Enter Parcel Destination" required>
+                                        </div>
+
+                                        <div class="vgro_phone_number_section">
+                                            <label for="number">Parcel Service</label>
+                                            <input type="text" name="number" id="number"
+                                                placeholder="Enter Service Name" required>
+                                        </div>
+
+
+                                        <div class="vgro_phone_number_section">
+                                            <label for="number">Invoice Number</label>
+                                            <input type="text" name="number" id="number"
+                                                placeholder="Enter Invoice Number" required>
+                                        </div>
+
+                                        <div class="vgro_phone_number_section">
+                                            <label for="number">LR Number</label>
+                                            <input type="text" name="number" id="number" placeholder="Enter LR Number"
+                                                required>
+                                        </div>
+
+                                        <div class="vgro_phone_number_section">
+                                            <label for="number">Parcel Status</label>
+                                            <select class="status" name="status" id="status" required>
+                                                <option selected="selected"><span class="RED">Select Current
+                                                        Status</span></option>
+                                                <option value="1">Panding</option>
+                                                <option value="2">Despatched</option>
+                                                <option value="3">Shipped</option>
+                                                <option value="4">Deliverd</option>
+                                                <option value="5">Not Deliverd</option>
+                                            </select>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT SIDE CREATE MODAL SECTION END HERE -->
+                </div>
+                <!-- RIGHT SIDE CREATE BUTTON SECTION END HERE -->
+
+
+                <!-- RIGHT SIDE TABLE SECTION START HERE -->
+                <div class="vgro_content_user_table_section">
+                    <div class="vgro_table_container">
+                        <div class="vgro_table_section">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr class="table_content_text">
+                                        <th scope="col">#</th>
+                                        <th scope="col">Customer Name</th>
+                                        <th scope="col">Parcel Type</th>
+                                        <th scope="col">Parcel Destination</th>
+                                        <th scope="col">Parcel Service</th>
+                                        <th scope="col">LR Number</th>
+                                        <th scope="col">Parcel Responsible Person</th>
+                                        <th>Status</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table_content_text">
+                                        <th scope="row">1</th>
+                                        <td>Jhon</td>
+                                        <td>Vgro Bag(35Kg)</td>
+                                        <td>Chennai</td>
+                                        <td>Rathi Meena</td>
+                                        <td>123456</td>
+                                        <td>Staff Name</td>
+                                        <td>Current Status</td>
+
+
+                                        <td>
+                                            <div class="table_action_button_section">
+
+                                                <!-- USER TABLE BTTON SECTION START HERE -->
+
+                                                <button type="button" class="table_view_button Bg_dis"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                    <span class="material-symbols-outlined">visibility
+                                                    </span>
+                                                </button>
+                                                <!-- Button trigger modal -->
+
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal1" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Parcel
+                                                                    Details</h5>
+
+                                                            </div>
+
+                                                            <div class="modal-body">
+                                                                <div class="vgro_view_list">
+
+                                                                    <div class="User_Name_List">
+                                                                        <label for="User_Name_lable">
+                                                                            Customer Name
+                                                                        </label>
+                                                                        <input type="text" placeholder="Jhon"
+                                                                            disabled>
+                                                                    </div>
+
+                                                                    <div class="User_Email_List">
+                                                                        <label for="User_Email_lable">
+                                                                            Parcel Type
+                                                                        </label>
+                                                                        <input type="email" placeholder="Vgro Bag(35Kg)"
+                                                                            disabled>
+                                                                    </div>
+
+                                                                    <div class="User_Password_List">
+                                                                        <label for="User_Password_lable">Parcel Destination
+                                                                        </label>
+                                                                        <input type="password"
+                                                                            placeholder="Chennai" disabled>
+                                                                    </div>
+
+                                                                    <div class="User_Phone_List">
+                                                                        <label for="User_Phone_lable">Parcel Service
+                                                                        </label>
+                                                                        <input type="number" placeholder="Rathi Meena"
+                                                                            disabled>
+                                                                    </div>
+
+                                                                    <div class="User_Phone_List">
+                                                                        <label for="User_Phone_lable">LR Number
+                                                                        </label>
+                                                                        <input type="number" placeholder="123456"
+                                                                            disabled>
+                                                                    </div>
+
+                                                                    <div class="User_Phone_List">
+                                                                        <label for="User_Phone_lable">Parcel Responsible Person
+                                                                        </label>
+                                                                        <input type="number" placeholder="Staff Name"
+                                                                            disabled>
+                                                                    </div>
+                                                                    
+                                                                    <div class="User_Phone_List">
+                                                                        <label for="User_Phone_lable">Status
+                                                                        </label>
+                                                                        <input type="number" placeholder="Current Status"
+                                                                            disabled>
+                                                                    </div>
+
+                                                                    <div class="vgro_user_form_image">
+                                                                        <div class="parcel_image_section">
+                                                                            <label for="formFile"
+                                                                                class="image_text">Parcel
+                                                                                Image</label>
+                                                                            <div class="parcel_image">
+                                                                                <img src="img/box.jpg"
+                                                                                    alt="parcel Image">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-success"
+                                                                    data-bs-dismiss="modal">Close</button>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- USER TABLE BUTTON SECTION END HERE -->
+                                                <button type="button" class="table_edit_button Bg_dis"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                                    <span class="material-symbols-outlined">
+                                                        edit
+                                                    </span>
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal3" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                                    <div
+                                                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Edit Parcel Service Data </h5>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="vgro_create_user_form_section">
+
+                                                                    <div class="update_section parcel_update">
+                                                                        <div class="vgro_name_section">
+                                                                            <label for="name">Customer Name</label>
+                                                                            <input type="text" name="name" id="name"
+                                                                                placeholder="Jhon">
+                                                                        </div>
+
+                                                                        <div class="vgro_email_section">
+                                                                            <label for="email">Parcel Type</label>
+                                                                            <input type="email" name="email"
+                                                                                placeholder="Vgro Bag(35Kg)" id="email">
+                                                                        </div>
+
+                                                                        <div class="vgro_user_form_image">
+                                                                            <div class="mb-3">
+                                                                                <label for="formFile" class="form-label">Uplaod Parcel Image</label>
+                                                                                <input class="form-control" type="file" id="formFile" required>
+                                                                            </div>
+                                                                        </div>
+
+                                                                       
+
+                                                                        <div class="vgro_phone_number_section">
+                                                                            <label for="number">Parcel
+                                                                                Destination</label>
+                                                                            <input type="text" name="number" id="number"
+                                                                                placeholder="Chennai">
+                                                                        </div>
+
+                                                                        <div class="vgro_phone_number_section">
+                                                                            <label for="number">Parcel Service</label>
+                                                                            <input type="text" name="number" id="number"
+                                                                                placeholder="Rathi Meena">
+                                                                        </div>
+
+                                                                        <div class="vgro_phone_number_section">
+                                                                            <label for="number">LR Number</label>
+                                                                            <input type="text" name="number" id="number"
+                                                                                placeholder="123456">
+                                                                        </div>
+
+                                                                        <div class="vgro_phone_number_section">
+                                                                            <label for="number">Parcel Responsible
+                                                                                Person</label>
+                                                                            <input type="text" name="number" id="number"
+                                                                                placeholder="Parcel Responsible Person">
+                                                                        </div>
+
+                                                                        <div class="vgro_phone_number_section">
+                                                                            <label for="number">Parcel Status</label>
+                                                                            <select class="status" name="status"
+                                                                                id="status" required>
+                                                                                <option selected="selected"><span
+                                                                                        class="RED">Select Current
+                                                                                        Status</span></option>
+                                                                                <option value="1">Panding</option>
+                                                                                <option value="2">Despatched</option>
+                                                                                <option value="3">Shipped</option>
+                                                                                <option value="4">Deliverd</option>
+                                                                                <option value="5">Not Deliverd</option>
+                                                                            </select>
+                                                                        </div>
 
 
 
-        <div class="vgro_table_container">
-            <div class="vgro_table_section">
-                <table class="table table-striped table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-danger"
+                                                                    data-bs-dismiss="modal">Cancel</button>
+                                                                <button type="button"
+                                                                    class="btn btn-success">Update</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- USER FORM DELETE BUTTON SECTION -->
+                                                <!-- <button class="table_delete_button Bg_dis"><span
+                                                        class="material-symbols-outlined">
+                                                        delete
+                                                    </span></button> -->
+
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="table_delete_button Bg_dis"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                                    <span class="material-symbols-outlined">
+                                                        delete
+                                                    </span>
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal5" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Parcel Service Data</h5>
+
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Do You Want To Delete?
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-success"
+                                                                    data-bs-dismiss="modal">No</button>
+                                                                <button type="button"
+                                                                    class="btn btn-danger">Yes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIGHT SIDE TABLE SECTION END HERE -->
             </div>
+
+
+            <!-- RIGHT SIDE CONTENT SECTION END HERE -->
+
+
         </div>
-
-
-
-
+        <!-- RIGHT SIDE CONTAINER END HERE -->
     </div>
 
-    <!-- Table Section End Here -->
+    <!-- MAIN CONTAINER END HERE -->
 
 
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 
 </html>
